@@ -55,8 +55,11 @@ Interestingly, RSA revealed that Burstprop has a high similarity to brain activi
 
 In addition to computing similarity between different brain regions and CNN layers, I also plotted the RDMs of evoked responses in area V4 of the visual cortex as well as the final layer of each model which corresponds to V4 [1](https://www.pnas.org/content/111/23/8619). 
 
-| ![fMRI_RDM](images/fMRI_RDM.png)  | ![GD_RDM](images/GD_RDM.png)  | ![burst_RDM](images/Burstprop_RDM.png) | ![hebb_RDM](images/Hebbian_RDM.png) |
-| ------------- | ------------- | ------------- | ------------- |
+| ![fMRI_RDM](images/fMRI_RDM.png)  | ![GD_RDM](images/GD_RDM.png)  |
+| ------------- | ------------- |
+
+| ![burst_RDM](images/Burstprop_RDM.png) | ![hebb_RDM](images/Hebbian_RDM.png) |
+| ------------- | ------------- |
 
 First, the RDM of fMRI activity shows that V4 does not organize stimuli according to an easily identifiable hierarchy. That is, stimuli are not grouped by any obvious category distinction. While past studies have shown some amount of semantic organization along the ventral stream [13](https://www.nature.com/articles/nn.4247), [14](https://www.jneurosci.org/content/30/39/12978), most studies have found that structured semantic organization is most prominent in IT - the final stage of the ventral stream [15](https://www.sciencedirect.com/science/article/pii/S0896627308009434). However, there appears to be two distinct regions of high similarity in the fMRI RDM, suggesting that some stimuli may be organized in V4 according to some unknown heuristic. Further study on the statistics of the clustered images might reveal the underlying rule driving such representations. 
     
