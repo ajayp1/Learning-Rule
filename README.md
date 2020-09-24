@@ -82,19 +82,19 @@ Perhaps rather than the present results being a limitation of ANNs, it is possib
 
 # If I had unlimited budget and time, I would…
 
-## Use a different dataset
+## 1. Use a different dataset
 
 On that note, I think a new hierarchical image dataset is worth considering for deep learning-driven neuroscience, and I’m not the first to raise this issue [22](http://www.cnbc.cmu.edu/~tai/microns_papers/Barlow-SensoryCommunication-1961.pdf). I also would have liked a dataset that included activity from the inferior temporal cortex, which is well known to be the brain area that most-explicitly encodes a semantically-organized representation of objects. 
 
-## 1. Try to model lower regions of the visual cortex
+## 2. Try to model lower regions of the visual cortex
 
 Next, I would develop an unsupervised learning rule to generate statistically independent representations. This is motivated by two observations: (1) unsupervised Hebbian learning trained a CNN whose layers were most similar to early layers of the visual cortex, and (2) there is plenty of evidence demonstrating that the lower regions of the visual system (from retina to V2/3) decorrelate visual features through the means of “efficient-coding [23]”. That is, representations in the early visual cortex appear to maximize the information within each receptive field. While previous studies have shown that unsupervised ANNs that optimize for statistical independence can match well to neural data, I haven’t found any that compare unsupervised “ICA-like” CNNs to vanilla supervised CNNs in their similarity to brain activity. Currently, Ganguli’s group has provided a theoretical understanding of how efficient-coding emerges in early layers of supervised CNNs [24](https://arxiv.org/abs/1901.00945), and Wiskott’s group is in the process of developing an “ICA” network that can handle high-dimensional data [25](https://arxiv.org/abs/1904.09858?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+arxiv%2FQSXk+%28ExcitingAds%21+cs+updates+on+arXiv.org%29). Higgins at DeepMind has also used a variational autoencoder for unsupervised maximization of statistical independence [26](https://arxiv.org/abs/1606.05579), and Pehlevan and Chklovskii have developed a fully-connected “ICA” network [27](https://arxiv.org/abs/1908.01867). Perhaps future work can explore whether multiple learning rules are present in different areas of the ventral stream (and I don’t think this would surprise anybody). 
 
-## 2. Monitor the brain during learning
+## 3. Monitor the brain during learning
     
 As far as V4 and IT go, perhaps an interesting future experiment would be to infer learning rules from human neural activity over the course of training. For example, as an adult human learns to discriminate between colors that are only discerned by a trained eye [28](https://languagelog.ldc.upenn.edu/nll/?p=17970). In this sort of psychophysics experiment - where expert level object recognition is developed - I would be curious to observe how the dynamics of the visual system change over time. (Surprisingly, I couldn’t find any such experiments, but will have to ask some folks that are more well read in this area.) A concurrent exercise could be to discover backpropagation and gradient descent within an ANN during training. Perhaps the tool used to solve such a problem can also extract a learning rule from neural data.
 
-## 3. Consider other tools for comparing representations
+## 4. Consider other tools for comparing representations
 
 Finally, I am now curious as to whether representational similarity analysis is the best game in town. What if the observed semantic organization of stimuli in the brain is an epiphenomenon? What if measuring the relative dissimilarity of different outputs of a network overlooks other important attributes? Perhaps future analytical tools that seek to capture brain (or ANN) representations should observe the effect of perturbing inferred representations on brain function and/or behavior. 
  
